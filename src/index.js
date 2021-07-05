@@ -15,25 +15,35 @@ console.log(firstCard);
 // B- finding within one particular element
 const imageFirstCard = firstCard.querySelector('img')
 console.log(firstCard);
-const titleFirstCard = null
-const subtitleFirstCard = null
-const textFirstCard = null
+const titleFirstCard = firstCard.querySelector('.card-title')
+console.log(titleFirstCard);
+const subtitleFirstCard = firstCard.querySelector('.card-subtitle')
+console.log(subtitleFirstCard);
+const textFirstCard = firstCard.querySelector('.card-text')
+console.log(textFirstCard);
 // C- traversing with dot notation
-const link1FirstCard = null
-const link2FirstCard = null
+const link1FirstCard = textFirstCard.nextElementSibling
+console.log(link1FirstCard);
+const link2FirstCard = link1FirstCard.nextElementSibling
+console.log(link2FirstCard);
 
 // 👉 2- Finding collections of elements in the DOM
 // A- Find all the anchor tags inside the nav element
-
+const links = document.querySelectorAll('nav a')
+console.log(links);
 // B- Loop over the links and console.log their text content
-
+links.forEach(link => {
+    console.log(link.textContent);
+})
 // C- Turn the collection of links into a real array
-
+const linksArray = Array.from(links)
+console.log(linksArray);
 // D- Use .filter to find the anchor tag with the textContent of "Home"
-
+console.log(linksArray.filter(link => link.textContent === 'Home'));
 
 // 👉 3- Changing an element's text content
 //  A- Change the cat-related content into dog-related content
+
 //  B- Have the students research online the difference between textContent and innerText
 
 
