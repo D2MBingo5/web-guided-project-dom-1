@@ -6,23 +6,29 @@
 // A- finding across the entire DOM
 // const header = document.getElementById('header')
 // const header = document.getElementsByTagName('header')
-const header = document.querySelector('header#header')
-const logoTitle = document.querySelector('h1#logoTitle.heading.logo')
+const header = document.getElementsByTagName('header')
+console.log(header);
+const logoTitle = document.getElementById('logoTitle')
+console.log(logoTitle);
 const firstCard = document.querySelector('.card:nth-of-type(1)')
+console.log(firstCard);
 // B- finding within one particular element
 const imageFirstCard = firstCard.querySelector('img')
-const titleFirstCard = firstCard.querySelector('h2.card-title')
-const subtitleFirstCard = firstCard.querySelector('h3')
-const textFirstCard = firstCard.querySelector('p')
+console.log(firstCard);
+const titleFirstCard = null
+const subtitleFirstCard = null
+const textFirstCard = null
 // C- traversing with dot notation
 const link1FirstCard = null
 const link2FirstCard = null
 
-
 // 👉 2- Finding collections of elements in the DOM
 // A- Find all the anchor tags inside the nav element
+
 // B- Loop over the links and console.log their text content
+
 // C- Turn the collection of links into a real array
+
 // D- Use .filter to find the anchor tag with the textContent of "Home"
 
 
